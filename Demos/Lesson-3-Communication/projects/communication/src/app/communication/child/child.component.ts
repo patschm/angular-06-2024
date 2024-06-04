@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ChildComponent implements OnInit 
 {
-  @Input()
+  @Input("naam")
   public name:string = "";
 
   @Output()

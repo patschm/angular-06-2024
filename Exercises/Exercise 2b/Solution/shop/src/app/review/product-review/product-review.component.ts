@@ -26,7 +26,7 @@ export class ProductReviewComponent implements OnInit {
   constructor(private builder: FormBuilder) { 
     this.reviewForm = this.builder.group({
       "score": ["", [Validators.min(0), Validators.max(5), Validators.required]],
-      "author": ["", [Validators.required]],
+      "author": ["", Validators.required],
       "text": ["", [Validators.required]]
     });
   }

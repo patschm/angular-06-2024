@@ -14,9 +14,9 @@ const data: ProductGroup[] = [{'id': 1, 'name': 'Laptops en notebooks', 'image':
 {'id': 24, 'name': 'Laserprinters', 'image': 'laserprinters.png'}];
 
 import { Component, OnInit } from '@angular/core';
-import { ProductGroup } from 'src/app/entities';
+import { ProductGroup } from '../../entities';
 
-// TODO: 1
+// TODO: 1                               
 // Create the ProductgroupListComponent
 //      - Field: productGroups of type ProductGroup array. Initialize it with data above
 // Tag name should be: <app-productgroup-list>

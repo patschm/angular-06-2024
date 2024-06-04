@@ -2,10 +2,11 @@
 <h1>{{name}}</h1>
 
 <form (ngSubmit)="submit()" #theForm="ngForm" novalidate="novalidate">
-    <input type="text" name="name" [(ngModel)]="name" required="required" #naam="ngModel" #spy/><span>{{spy.className}}</span>
-    <div [hidden]="!naam.valid"></div>
+    <input type="text" name="name" [(ngModel)]="name" required="required" #naam="ngModel" #spy/><span>{{naam}}  {{spy.className}}</span>
+    <div [hidden]="naam.valid">Naam is verplicht</div>
     <br/>
-    <input type="number" name="age" min="0" max="10" [(ngModel)]="age" #spy2 /><span>{{spy2.className}} {{naam.invalid}}</span>
+    <input type="number" name="age" min="0" max="10" [(ngModel)]="age" #age="ngModel" #spy2 /><span>{{spy2.className}} {{naam.invalid}}</span>
+    <div [hidden]="age.value <= 10">Age heeft geen juiste waarde</div>
     <br/>
     <button [disabled]="!theForm.form.valid" type="submit">Post</button>
 </form>

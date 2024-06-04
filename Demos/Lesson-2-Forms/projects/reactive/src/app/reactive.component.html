@@ -2,7 +2,8 @@
 <h1>{{name}}</h1>
 
 <form [formGroup]="theForm" (ngSubmit)="submit()">
-  <input type="text" formControlName="name" /><span [hidden]="!form.name?.errors">Name is required</span>
+  <input type="text" formControlName="name" />
+  <span [hidden]="!form.name?.errors">Name is required</span>
   <br/>
   <input type="number" formControlName="age" />
   <div  [hidden]="!form.age?.errors">
