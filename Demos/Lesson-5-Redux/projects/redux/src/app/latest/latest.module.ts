@@ -5,7 +5,6 @@ import { LatestAComponent } from './latest-a/latest-a.component';
 import { LatestBComponent } from './latest-b/latest-b.component';
 import { LatestComponent } from './latest.component';
 import { MessageService } from './message.service';
-import { environment } from 'src/environments/environment';
 
 //npm install @ngrx/store --save
 import { StoreModule } from '@ngrx/store';
@@ -17,6 +16,7 @@ import { EffectsModule } from '@ngrx/effects';
 
 import { reducers } from '../latest/latest-store';
 import { MessageEffects } from '../latest/latest-store/effects/message.effects'
+import { environment } from '../../environments/environment';
 
 @NgModule({
   declarations: [LatestComponent, LatestAComponent, LatestBComponent],
@@ -27,8 +27,8 @@ import { MessageEffects } from '../latest/latest-store/effects/message.effects'
     StoreModule.forRoot(reducers),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
-      logOnly: environment.production, // Restrict extension to log-only mode
-    , connectInZone: true}),
+      logOnly: environment.production
+    }),
     EffectsModule.forRoot([MessageEffects])
   ],
   providers:[MessageService, MessageEffects]

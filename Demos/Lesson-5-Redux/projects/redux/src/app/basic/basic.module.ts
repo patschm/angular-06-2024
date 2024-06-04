@@ -25,8 +25,8 @@ import { reduce } from './basic-store/reducers/reducer';
     StoreModule.forRoot({ "messages":reduce }),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
-      logOnly: environment.production, // Restrict extension to log-only mode
-    , connectInZone: true}),
+      logOnly: environment.production // Restrict extension to log-only mode
+    }),
   ],
   providers:[MessageService]
 })
