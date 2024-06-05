@@ -14,7 +14,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 // Recommended: npm install @ngrx/schematics --save-dev
 
-import { reducers } from '../latest/latest-store';
+import { messageReducer, reducers } from '../latest/latest-store';
 import { MessageEffects } from '../latest/latest-store/effects/message.effects'
 import { environment } from '../../environments/environment';
 
