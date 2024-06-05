@@ -26,7 +26,7 @@ export class ProductReviewComponent implements OnInit, OnDestroy {
     if (this.reviewForm.invalid)
     {
       let ref = this.modal.open(NotSavedComponent);
-    return from(ref.result);
+      return from(ref.result);
     }
     return this.reviewForm.valid;
   }  

@@ -12,7 +12,7 @@ import { authGuard } from '../authenticate/auth.guard';
 import { dataGuard } from '../data/data.guard';
 
 const routes: Routes = [
-  { path:'main1', component:Main1Component, resolve:{someData:dataGuard} },
+  { path:'main1', component:Main1Component, resolve:{ someData:dataGuard} },
   { path:'main2', component:Main2Component },
   { path:'main3', component:Main3Component, canActivate:[authGuard] },
   { path:'login', component:LoginComponent},

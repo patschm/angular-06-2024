@@ -5,6 +5,7 @@ import { Sub1Component } from './sub1/sub1.component';
 import { Sub2Component } from './sub2/sub2.component';
 import { RouterModule, Routes } from '@angular/router';
 
+
 const routes:Routes = [
   {
     path:'',
@@ -29,7 +30,7 @@ const routes:Routes = [
 
 @NgModule({
   declarations: [SubComponent, Sub1Component, Sub2Component],
-  exports:[SubComponent],
+  exports: [SubComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)

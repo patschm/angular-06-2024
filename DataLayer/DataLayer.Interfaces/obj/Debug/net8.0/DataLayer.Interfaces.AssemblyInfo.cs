@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataLayer.Interfaces")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28c4c1d8980c177ee4c361db11f5ee842692e323")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d21c57f289426162a8fb4aa571de87409d31a54")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataLayer.Interfaces")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataLayer.Interfaces")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
